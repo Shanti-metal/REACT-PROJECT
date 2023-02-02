@@ -13,7 +13,7 @@ function Header() {
           <li>Categories</li>
         </ul>
         <div className="center">
-          Shop
+          AMAZON SHOP
         </div>
         <div className="right">
           <TbSearch/>
