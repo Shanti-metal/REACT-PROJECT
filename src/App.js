@@ -15,6 +15,8 @@ import Footer from './Components/Footer';
 import Newsletter from './Components/Newsletter';
 import Context from './Utils/Context'; 
 import AppContext from './Utils/Context';
+import About from './Components/About';
+import Contact from './Components/Contact';
 
 function App() {
   return (
@@ -24,8 +26,10 @@ function App() {
           <Header/>
           <Routes>
             <Route path='/' element={<Home/>}/>
+            <Route path='/about' element={<About/>}/>
             <Route path='/category/:id' element={<Category/>}/>
             <Route path='/product/:id' element={<SingleProduct />}/>
+            <Route path='/contact' element={<Contact/>}/>
           </Routes>
           <Newsletter/>
           <Footer/>

@@ -1,3 +1,4 @@
+@import '../css-config/mixins.scss';
 body{
     margin: 0;
     padding: 0;
@@ -6,9 +7,13 @@ body{
 .main-header{
     width: 100%;
     // padding: 0 20px;
-    background-color: #212121;
+    background-color: #131921;
     color: #ffff;
     border-bottom: 1px solid rgba($color: #000000, $alpha: 1.0);
+    z-index: 99;
+    
+    
+    
     .header-content{
         display: flex;
         justify-content: space-between;
@@ -16,15 +21,49 @@ body{
         height: 50px;
         margin: 0 auto;
         max-width: 1350px;
+        @include for-tablet-portrait-up{
+            height: 80px;
+            padding: 0 40px 0 0;
+        }
+        @include for-phone-only{
+            padding: 0 20px;
+        }
+        .mobile-menu{
+            font-size: 22px;
+            @include for-desktop-up{
+                display: none;
+            }
+            @include for-big-desktop-up{
+                display: none;
+            }
+            @include for-phone-only{
+                display: block;
+            }
+            @include for-tablet-portrait-up{
+                display: block;
+            }
+            @include for-tablet-landscape-up{
+                 display: none;   
+            }
+        }
+    
         .left{
             list-style-type: none;
             display: flex;
             gap: 25px;
+
+            @include for-phone-only{
+                display: none;
+            }
             li{
                 font-size: 14px;
                 font-weight: 600;
                 text-transform: uppercase;
                 cursor: pointer;
+                a{
+                    text-decoration: none;
+                    color: #ffffff;
+                }
             }
         }
         .center{
