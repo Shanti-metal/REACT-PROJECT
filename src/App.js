@@ -17,6 +17,8 @@ import Context from './Utils/Context';
 import AppContext from './Utils/Context';
 import About from './Components/About';
 import Contact from './Components/Contact';
+import Signup from './Components/Signup';
+import Login from './Components/Login';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
             <Route path='/category/:id' element={<Category/>}/>
             <Route path='/product/:id' element={<SingleProduct />}/>
             <Route path='/contact' element={<Contact/>}/>
+            <Route path='/login' element={<Login/>}/>
+            <Route path='/signup' element={<Signup/>}/>
           </Routes>
           <Newsletter/>
           <Footer/>

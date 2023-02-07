@@ -7,7 +7,7 @@ const Banner = () =>{
     return <div className='hero-banner'>
         <div className='content'>
             <div className='header-info'>
-                <HeaderInfo/>
+                {/* <HeaderInfo/> */}
             </div>
             <div className='slider-images'>
                 <Slider/>
