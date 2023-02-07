@@ -24,6 +24,10 @@
             height: 52px;
             width: 30%;
             margin: 20px auto 5px;
+
+            @include for-phone-only{
+                width: 75%;
+            }
         }
 
         Form {
@@ -36,7 +40,10 @@
                 margin: 20px auto 5px;
                 height: 52px;
                 background-color: rgb(255,0,0);
-            
+                
+                @include for-phone-only{
+                    width: 75%;
+                }
             }
             .regBtn{
                 margin-top: 0;

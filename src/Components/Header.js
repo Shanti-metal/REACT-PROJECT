@@ -38,7 +38,7 @@ function Header() {
           <span>5</span>
         </span>
         <li><Link to='/login'><AiOutlineUser/></Link></li>
-        <li><Link to='/signup'><AiOutlineUserAdd/></Link></li>
+        {/* <li><Link to='/signup'><AiOutlineUserAdd/></Link></li> */}
       </div>
     </div>
   </header>

@@ -29,7 +29,7 @@ body{
         
         .left{
             img{
-                width: auto;
+                max-width: 60px;
             }
         }
 
@@ -40,7 +40,6 @@ body{
                 gap: 25px;
                 align-items: center;
                 margin-bottom: 0;
-                
                 
                 li{
                     font-size: 17px;
@@ -67,6 +66,7 @@ body{
                 }
                 @include for-phone-only{
                     display: block;
+                    margin-right: 60px;
                 }
                 @include for-tablet-portrait-up{
                     display: block;

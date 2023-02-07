@@ -3,6 +3,8 @@ import { Button, Col, Container, Form } from "react-bootstrap";
 import './Login.scss';
 import { SiFacebook } from 'react-icons/si';
 import { FcGoogle } from 'react-icons/fc';
+import { Link } from 'react-router-dom';
+
 
 function Signup(){
     return(
@@ -20,10 +22,11 @@ function Signup(){
                 <Form>
                     <input type="email" placeholder="Email" />
                     <input type="password" placeholder="Password" />
+                    <input type="password" placeholder="Re-Password" />
+
                     <Button>Login</Button>
                     <ul>
-                        <li>New Customer?</li>
-                        <li>Create an account</li>
+                        <li><Link to='/login'>Login</Link></li>
                     </ul>
                 </Form>
             </div>
