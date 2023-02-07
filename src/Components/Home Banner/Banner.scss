@@ -14,10 +14,10 @@
         align-items: center;
 
         .slider-images{
-            padding: 0 3rem;
+            // padding: 0 3rem;
 
             @include for-phone-only{
-                padding: 0 1rem;
+                // padding: 0 1rem;
             }
         }
     }   

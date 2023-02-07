@@ -1,0 +1,54 @@
+@import '../css-config/mixins.scss';
+
+
+.login-form {
+    text-align: center;
+    margin-top: 50px;
+    .social-icon {
+        font-size: 42px;
+
+        :first-child {
+            color: #3B5998;
+        }
+
+        :last-child {
+            margin-left: 20px;
+        }
+    }
+
+    .page-form {
+
+
+        input {
+            padding: 0 18px;
+            height: 52px;
+            width: 30%;
+            margin: 20px auto 5px;
+        }
+
+        Form {
+            display: flex;
+            flex-direction: column;
+
+            button {
+                margin-top: 20px;
+                width: 30%;
+                margin: 20px auto 5px;
+                height: 52px;
+                background-color: rgb(255,0,0);
+            
+            }
+            .regBtn{
+                margin-top: 0;
+            }
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 20px auto 5px;
+
+        }
+    }
+}
